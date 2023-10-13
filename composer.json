@@ -1,0 +1,38 @@
+{
+    "name": "devscast/maxicash",
+    "description": "The MaxiCash integration platform enables merchants to integrate with the MaxiCash platform to receive payments via their mobile applications or websites. The API uses JSON to interact with .Net or open source platforms such as PHP.",
+    "keywords": [
+        "maxicash",
+        "mobile money",
+        "payment gateway",
+        "api"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Devscast\\Maxicash\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "bernard-ng",
+            "email": "ngandubernard@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "symplify/easy-coding-standard": "^12.0"
+    },
+    "require": {
+        "php": ">=8.2",
+        "webmozart/assert": "^1.11"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/devscast/maxicash"
+        }
+    ]
+}
