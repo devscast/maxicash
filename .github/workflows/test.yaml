@@ -1,8 +1,8 @@
-name: Lint
+name: Test
 on: [push]
 jobs:
     lint:
-        name: PHP Lint
+        name: PHP Test
         runs-on: ubuntu-latest
         steps:
             - name: Setup PHP
