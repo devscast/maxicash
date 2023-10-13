@@ -16,6 +16,7 @@ use Webmozart\Assert\Assert;
 final readonly class Credential
 {
     public string $merchantId;
+
     public string $merchantKey;
 
     /**
