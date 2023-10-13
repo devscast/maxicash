@@ -1,6 +1,7 @@
 # Maxicash PHP
 
 ![Lint](https://github.com/devscast/maxicash/actions/workflows/lint.yaml/badge.svg)
+![Test](https://github.com/devscast/maxicash/actions/workflows/test.yaml/badge.svg)
 [![Latest Stable Version](https://poser.pugx.org/devscast/maxicash/version)](https://packagist.org/packages/devscast/maxicash)
 [![Total Downloads](https://poser.pugx.org/devscast/maxicash/downloads)](https://packagist.org/packages/devscast/maxicash)
 [![License](https://poser.pugx.org/devscast/maxicash/license)](https://packagist.org/packages/devscast/maxicash)
@@ -20,7 +21,7 @@ The MaxiCash Gateway enables the Merchant to Collect Payment into their MaxiCash
 ### Authentication
 * **Step 1**. Download the MaxiCash Mobile App and signup...
 * **Step 2**. Contact us to upgrade your account to a Merchant Account info@maxicashapp.com
-You will receive a Merchant Form to complete in order to provide your business details and preffered Cashout Wallet or Banking Details.
+You will receive a Merchant Form to complete in order to provide your business details and preferred Cash out Wallet or Banking Details.
 * **Step 3**. Once the paperwork is completed, you will be issued with Live and Sandbox Accounts (MerchantID and MerchantPassword)
 
 
@@ -58,7 +59,7 @@ $url = $maxicash->queryStringURLPayment($entry);
 > **Note** : we highly recommand to do a `server side` redirection, this url can be modified and leak your maxicash credentials when displayed to your user in any manner (eg: a link, button or form) ! you can use the `header("Location: $url")` fonction in vanilla PHP or return a `RedirectResponse($url)` in your controller when using Symfony or Laravel frameworks`
 
 ### Donate Button for NGOs
-Once you signup as an NGO Merchant
+Once you sign up as an NGO Merchant
 
 ```php
 $donationUrl = $maxicash->donationUrl()
