@@ -53,6 +53,8 @@ $entry = new PaymentEntry(
 ### Redirect to Maxicash Gateway
 Redirect your user to the maxicash gateway to continue the payment process
 
+> **Note** : If you're using Turbo Drive in your Symfony application, disable it on payment links in your twig templates
+
 ```php
 $url = $maxicash->queryStringURLPayment($entry);
 ```
